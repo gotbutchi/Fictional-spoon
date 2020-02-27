@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="http://bichou.de/wp-content/uploads/2018/01/Logo-Bichou-Bistro-Cafe-Berlin-1.png" alt="">
+    <title>BiChou Coffee</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="h-100">
+
+    <!-- <div class="video-background embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" frameborder="0"  scrolling="no" src="video3.mp4" allowfullscreen></iframe>
+    </div>   -->
+
+            <div class="logo">
+                <a href="index.html">
+                <img src="http://bichou.de/wp-content/uploads/2018/01/Logo-Bichou-Bistro-Cafe-Berlin-1.png" width="65" height="65" alt="">
+                </a>
+            </div>   
+
+
+    <div class="page">
+        <!-- desktop -->
+        <div class="home-vid d-none d-lg-block">
+            <video class="video-background" autoplay loop muted playsinline>
+                <source src="video3.mp4" type= "video/mp4">
+            </video>
+        </div>
+
+        <!-- mobile -->
+        <div class="home-vid d-block d-lg-none">
+            <video class="video-background" autoplay loop muted playsinline>
+                <source src="video5fix.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="container-fluid container-index h-100 px-0">
+        <div class="row h-100 no-gutters">
+            <div class="col-5 h-100 "></div>
+
+            <div class="col-2 col-menu">
+                <!-- <div class="logo">
+                    <a href="#">
+                    <img src="http://bichou.de/wp-content/uploads/2018/01/Logo-Bichou-Bistro-Cafe-Berlin-1.png" width="65" height="65" class="d-inline-block " alt="">
+                    </a>
+                </div>      -->
+
+                <div class="menu-items">
+                    <div class="navmenu">
+                        <a class="nav-link-menu" href="index.html">HOME</a><br>
+                        <a class="nav-link-menu" href="about.html">ABOUT</a><br>
+                        <a class="nav-link-menu" href="menu.html">MENU</a><br>
+                        <a class="nav-link-menu" href="location.html">LOCATIONS</a><br>
+                        <a class="nav-link-menu" href="blog.html">BLOG</a><br>
+                        <a href="" class="btn1 mb-4 nav-link-menu" data-toggle="modal" data-target="#modalContactForm">CONTACT</a><br>
+                  
+                        <!-- CONTACT FORM -->
+                            <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body mx-3">
+                                <div class="md-form mb-5">
+                                    <i class="fa fa-user prefix grey-text"></i>
+                                    <input type="text" id="form34" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                                </div>
+
+                                <div class="md-form mb-5">
+                                    <i class="fa fa-envelope prefix grey-text"></i>
+                                    <input type="email" id="form29" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                                </div>
+
+                                <div class="md-form mb-5">
+                                    <i class="fa fa-tag prefix grey-text"></i>
+                                    <input type="text" id="form32" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="form32">Subject</label>
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fa fa-pencil prefix grey-text"></i>
+                                    <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                                    <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                                </div>
+
+                                </div>
+                                <div class="modal-footer d-flex justify-content-center">
+                                <button class="btn btn-unique">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                            <!-- CONTACT FORM -->
+                    </div>
+                </div>
+
+                <div class="nav-shop">
+                    <a class="nav-link-menu" href="cart.html">Cart (<span class="cart-count">0</span>)</span></a><br>
+                    <a class="nav-link-menu" data-test="0" href="account.html">My account</span></a>                 
+                </div>
+
+                <div class="bottom">
+                    <a class="fa fa-instagram" href="https://www.instagram.com/d.sharpener/" target="_blank">
+                      </a>
+
+                </div>
+
+            </div>
+        
+            <div class="col-5  h-100"></div>
+        </div>
+
+</div>
+</body>
+</html>
